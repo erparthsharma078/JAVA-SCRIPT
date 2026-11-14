@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+    function display1() {
+        let Obj = document.getElementById("demo");
+        Obj.style.width = "300px";
+        Obj.style.height = "300px";
+        Obj.style.border = "5px solid red";
+        Obj.style.borderRadius = "50%";
+    }
+
+    function display2() {
+        let Obj = document.getElementById("demo");
+        Obj.style.backgroundColor = "yellow";
+    }
+
+    function display3() {
+        let Obj = document.getElementById("demo");
+        Obj.innerHTML = "Welcome Miracle!!!";
+        Obj.style.fontSize = "30px";
+        Obj.style.lineHeight = "10";
+        Obj.style.textAlign = "center";
+        Obj.style.color = "red";
+        Obj.style.fontFamily = "verdana";
+    }
+</script>
+</head>
+<body>
+<button onclick="display1()">click1</button>
+<button onclick="display2()">click2</button>
+<button onclick="display3()">click3</button>
+<p id="demo"></p>
+</body>
+</html>
