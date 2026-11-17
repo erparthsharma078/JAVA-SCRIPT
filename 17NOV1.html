@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+    var setClear;
+    function myData(){
+        document.getElementById("demo").innerHTML = "Happy BirthDay!!!";
+    }
+
+    function display(){
+        setClear = setTimeout(myData, 5000);
+    }
+
+    function myStop(){
+        clearTimeout(setClear);
+    }
+</script>
+</head>
+<body>
+<button onclick="display()">Click here!</button>
+<button onclick="myStop()">Stop!!!</button>
+<p id="demo">Welcome...</p>
+</body>
+</html>
