@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function display() {
+      const age = [20, 10, 15, 22, 40, 17];
+      const age1 = age.map(function (myval) {
+        return myval * 2;
+      });
+
+      console.log(age);
+      console.log(age1);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="display()">Click here!</button>
+  <p id="demo">welcome.</p>
+</body>
+</html>
