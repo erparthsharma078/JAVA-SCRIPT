@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    async function display(){
+      const Obj = await fetch("raj.txt");
+      const ans = await Obj.text();
+      console.log(ans);
+      document.getElementById("demo").innerHTML = ans;
+    }
+  </script>
+</head>
+<body>
+  <button onclick="display()">Click here!</button>
+  <p id="demo">welcome...</p>
+</body>
+</html>
+
+
