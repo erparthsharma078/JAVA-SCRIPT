@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function display() {
+      try {
+        var a = prompt("Enter no 1 : ");
+        var b = prompt("Enter no 2 : ");
+        if (b == 0) {
+          throw "You can not Divide by zero!";
+        }
+        var c = a / b;
+        document.getElementById("demo").innerHTML = "Division : " + c;
+      } catch (e) {
+        document.getElementById("demo").innerHTML = e;
+      } finally {
+        document.getElementById("demo").innerHTML += "<br> This code always Run!!!";
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="display()">Click here!</button>
+  <h1 id="demo"></h1>
+</body>
+</html>
