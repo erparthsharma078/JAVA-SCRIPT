@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 2 Page</title>
+    <style>
+        body {
+            color: rgb(245, 241, 241);
+            background-color: blueviolet;
+            font-family: Arial, sans-serif;
+            padding: 32px;
+        }
+        .butn {
+            background-color: blue;
+            color: aliceblue;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .butn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my 2nd Home Page</h1>
+    <button onclick="window.open('home1.html', '_blank')" class="butn">Open Home 1</button>
+    <button onclick="history.forward()" class="butn">Forward</button>
+    <button onclick="history.back()" class="butn">Back</button>
+    <button onclick="history.go(0)" class="butn">Reload (go)</button>
+    <button onclick="location.href='index.html'" class="butn">Go to Index</button>
+</body>
+</html>
